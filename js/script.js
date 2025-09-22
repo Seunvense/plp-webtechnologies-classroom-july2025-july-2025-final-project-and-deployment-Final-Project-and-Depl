@@ -1,4 +1,4 @@
-/* Dark Mode Toggle */
+/* === Dark Mode Toggle === */
 function toggleDarkMode() {
     document.body.classList.toggle('dark-mode');
     const button = document.getElementById('theme-toggle');
@@ -7,20 +7,24 @@ function toggleDarkMode() {
 
 document.getElementById('theme-toggle').addEventListener('click', toggleDarkMode);
 
-/* Smooth Scroll */
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', (e) => {
-        e.preventDefault();
-        const target = document.querySelector(anchor.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({ behavior: 'smooth' });
-        } else {
-            window.location.href = anchor.getAttribute('href');
-        }
+/* === Smooth Scroll === */
+function setupSmoothScroll() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', (e) => {
+            e.preventDefault();
+            const target = document.querySelector(anchor.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                window.location.href = anchor.getAttribute('href');
+            }
+        });
     });
-});
+}
 
-/* Scroll Animation */
+document.addEventListener('DOMContentLoaded', setupSmoothScroll);
+
+/* === Scroll Animation === */
 function animateOnScroll() {
     const elements = document.querySelectorAll('[data-animate="fade-in"], [data-animate="progress"]');
     elements.forEach(element => {
@@ -37,19 +41,23 @@ function animateOnScroll() {
 window.addEventListener('scroll', animateOnScroll);
 document.addEventListener('DOMContentLoaded', animateOnScroll);
 
-/* Project Filter */
-document.querySelectorAll('.filter-btn').forEach(button => {
-    button.addEventListener('click', () => {
-        document.querySelector('.filter-btn.active')?.classList.remove('active');
-        button.classList.add('active');
-        const category = button.dataset.category;
-        document.querySelectorAll('.project-card').forEach(card => {
-            card.classList.toggle('visible', category === 'all' || card.dataset.category === category);
+/* === Project Filter === */
+function setupProjectFilter() {
+    document.querySelectorAll('.filter-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            document.querySelector('.filter-btn.active')?.classList.remove('active');
+            button.classList.add('active');
+            const category = button.dataset.category;
+            document.querySelectorAll('.project-card').forEach(card => {
+                card.classList.toggle('visible', category === 'all' || card.dataset.category === category);
+            });
         });
     });
-});
+}
 
-/* Back-to-Top Button */
+document.addEventListener('DOMContentLoaded', setupProjectFilter);
+
+/* === Back-to-Top Button === */
 function toggleBackToTop() {
     const button = document.getElementById('back-to-top');
     button.classList.toggle('visible', window.scrollY > 300);
@@ -60,9 +68,11 @@ document.getElementById('back-to-top').addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-/* Form Validation and localStorage */
-const form = document.getElementById('contact-form');
-if (form) {
+/* === Contact Form with localStorage === */
+function setupContactForm() {
+    const form = document.getElementById('contact-form');
+    if (!form) return;
+
     // Load saved form data
     const savedData = JSON.parse(localStorage.getItem('contactForm') || '{}');
     document.getElementById('name').value = savedData.name || '';
@@ -124,3 +134,5 @@ if (form) {
         }
     });
 }
+
+document.addEventListener('DOMContentLoaded', setupContactForm);

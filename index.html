@@ -1,30 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta tags for character set and responsive viewport -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - Oluwaseun's Portfolio</title>
+    <!-- Link to main stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- Header with navigation and dark mode toggle -->
     <header class="main-header">
       <div class="container">
         <h1 class="logo">Oluwaseun</h1>
         <nav class="main-nav">
+          <!-- Hamburger menu for mobile -->
           <input type="checkbox" id="nav-toggle" class="nav-toggle" />
           <label for="nav-toggle" class="nav-toggle-label">
             <span></span><span></span><span></span>
           </label>
           <ul class="nav-list">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a href="index.html" class="active" aria-label="Home">Home</a>
+            </li>
+            <li><a href="about.html" aria-label="About">About</a></li>
+            <li><a href="contact.html" aria-label="Contact">Contact</a></li>
           </ul>
           <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
         </nav>
       </div>
     </header>
+    <!-- Main content -->
     <main>
+      <!-- Hero section with call-to-action -->
       <section class="hero">
         <div class="container">
           <h2>Welcome to My Portfolio</h2>
@@ -35,6 +43,7 @@
           <a href="about.html" class="cta-button">View My Work</a>
         </div>
       </section>
+      <!-- Project showcase with filtering -->
       <section class="projects">
         <div class="container">
           <h2>My Projects</h2>
@@ -73,6 +82,7 @@
           </div>
         </div>
       </section>
+      <!-- Skills section with animated cards -->
       <section class="skills">
         <div class="container">
           <h2>My Skills</h2>
@@ -93,7 +103,9 @@
         </div>
       </section>
     </main>
+    <!-- Back-to-top button -->
     <button id="back-to-top" aria-label="Back to top">↑</button>
+    <!-- Footer with contact info -->
     <footer class="main-footer">
       <div class="container">
         <p>
@@ -105,6 +117,7 @@
         </p>
       </div>
     </footer>
+    <!-- Link to main JavaScript -->
     <script src="js/script.js"></script>
   </body>
 </html>
