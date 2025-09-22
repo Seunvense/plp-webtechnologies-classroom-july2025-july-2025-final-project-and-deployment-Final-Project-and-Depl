@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Oluwaseun's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <h1 class="logo">Oluwaseun</h1>
+        <nav class="main-nav">
+          <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+          <label for="nav-toggle" class="nav-toggle-label">
+            <span></span><span></span><span></span>
+          </label>
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="about">
+        <div class="container">
+          <h2>About Me</h2>
+          <div class="about-content">
+            <img
+              src="images/profile.jpg"
+              alt="Oluwaseun's profile"
+              class="profile-img"
+              loading="lazy"
+            />
+            <div class="bio">
+              <p>
+                I'm Oluwaseun, a web developer passionate about creating
+                user-friendly, responsive websites.
+              </p>
+              <p>
+                My goal is to build impactful digital solutions that enhance
+                user experiences.
+              </p>
+            </div>
+          </div>
+          <h3>Skills</h3>
+          <div class="skills-progress">
+            <div
+              class="progress-bar"
+              data-animate="progress"
+              data-skill="HTML5"
+              data-value="90"
+            >
+              HTML5: 90%
+            </div>
+            <div
+              class="progress-bar"
+              data-animate="progress"
+              data-skill="CSS"
+              data-value="85"
+            >
+              CSS: 85%
+            </div>
+            <div
+              class="progress-bar"
+              data-animate="progress"
+              data-skill="JavaScript"
+              data-value="80"
+            >
+              JavaScript: 80%
+            </div>
+          </div>
+          <h3>Education & Experience</h3>
+          <div class="timeline">
+            <div class="timeline-item" data-animate="fade-in">
+              <h4>2025 - Web Development Bootcamp</h4>
+              <p>
+                Completed Power Learn Project's program, mastering HTML, CSS,
+                JavaScript.
+              </p>
+            </div>
+            <div class="timeline-item" data-animate="fade-in">
+              <h4>2024 - Self-Taught Developer</h4>
+              <p>Built personal projects focusing on responsive design.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <button id="back-to-top" aria-label="Back to top">↑</button>
+    <footer class="main-footer">
+      <div class="container">
+        <p>
+          Contact:
+          <a href="mailto:vincentoluwaseun@gmail.com"
+            >vincentoluwaseun@gmail.com</a
+          >
+          | &copy; 2025 Oluwaseun
+        </p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

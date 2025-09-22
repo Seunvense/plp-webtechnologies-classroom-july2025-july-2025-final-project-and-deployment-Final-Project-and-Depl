@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Oluwaseun's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <h1 class="logo">Oluwaseun</h1>
+        <nav class="main-nav">
+          <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+          <label for="nav-toggle" class="nav-toggle-label">
+            <span></span><span></span><span></span>
+          </label>
+          <ul class="nav-list">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h2>Welcome to My Portfolio</h2>
+          <p>
+            Hi, I'm Oluwaseun, a passionate web developer. Explore my skills and
+            projects!
+          </p>
+          <a href="about.html" class="cta-button">View My Work</a>
+        </div>
+      </section>
+      <section class="projects">
+        <div class="container">
+          <h2>My Projects</h2>
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="web">
+              Web Development
+            </button>
+            <button class="filter-btn" data-category="python">Python</button>
+          </div>
+          <div class="project-grid">
+            <div
+              class="project-card"
+              data-category="web"
+              data-animate="fade-in"
+            >
+              <h3>Portfolio Website</h3>
+              <p>A responsive multipage site built with HTML, CSS, JS.</p>
+            </div>
+            <div
+              class="project-card"
+              data-category="python"
+              data-animate="fade-in"
+            >
+              <h3>Data Analysis Tool</h3>
+              <p>Python script for analyzing datasets with Pandas.</p>
+            </div>
+            <div
+              class="project-card"
+              data-category="web"
+              data-animate="fade-in"
+            >
+              <h3>E-Commerce Mockup</h3>
+              <p>Interactive prototype with filtering and animations.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="skills">
+        <div class="container">
+          <h2>My Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-card" data-animate="fade-in">
+              <h3>HTML5 & CSS</h3>
+              <p>Building responsive, semantic websites.</p>
+            </div>
+            <div class="skill-card" data-animate="fade-in">
+              <h3>JavaScript</h3>
+              <p>Creating interactive, dynamic features.</p>
+            </div>
+            <div class="skill-card" data-animate="fade-in">
+              <h3>Python</h3>
+              <p>Developing data analysis and backend logic.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <button id="back-to-top" aria-label="Back to top">↑</button>
+    <footer class="main-footer">
+      <div class="container">
+        <p>
+          Contact:
+          <a href="mailto:vincentoluwaseun@gmail.com"
+            >vincentoluwaseun@gmail.com</a
+          >
+          | &copy; 2025 Oluwaseun
+        </p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
