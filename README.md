@@ -1,90 +1,68 @@
-# 📦 Final Assignment: Build, Organize, and Deploy a Multipage Website
+Personal Portfolio Website
+Purpose
+This website serves as a personal portfolio to showcase my skills, projects, and contact information for potential employers or clients. It demonstrates proficiency in HTML5, CSS, JavaScript, responsive design, and deployment, built for the Power Learn Project Capstone Assignment.
+Structure
+The website consists of three pages:
 
-You're now ready to bring everything together—HTML, CSS, JavaScript, planning, structure, and deployment. This final project challenges you to **conceptualize, build, and deploy a multi-page website** that is responsive, interactive, and ready for the real world.
+Home: Introduces me with a hero section, filterable project gallery, and animated skill cards.
+About: Details my background, education, and goals, with a profile photo and animated skill progress bars.
+Contact: Provides a form with validation and localStorage persistence.
 
-This assignment will guide you from planning your site all the way to deploying it online. Let’s make your project *production-worthy*! 🚀
+Special Features
 
----
+Dynamic Project Showcase: Filter projects by category (e.g., Web Development, Python) on Home.
+Smooth Scroll: Navigation links scroll smoothly to sections or pages.
+Back-to-Top Button: Appears on scroll with fade-in animation.
+Skill Progress Bars: Animated bars on About showing proficiency levels.
+Contact Form Persistence: Saves form input in localStorage, clears on submission.
+Lazy-Loaded Images: Optimizes performance.
+Dark Mode Toggle: Enhances accessibility.
+Hamburger Menu: Mobile-friendly navigation.
+Scroll Animations: Fade-in effects for skills and timeline.
 
-## 🌐🎯 Part 1: Planning and Organizing a Multipage Website
+Navigation
 
-Before you write any code, take time to plan:
+Header: Consistent across all pages with links to Home, About, Contact.
+Footer: Includes email (vincentoluwaseun@gmail.com) and copyright (© 2025 Oluwaseun).
+User Journey:
+Home → About (learn more), Contact (reach out).
+About → Home, Contact.
+Contact → Home, About.
 
-* Define your website's purpose (portfolio, product showcase, blog, etc.)
-* Outline 3–5 pages (e.g., Home, About, Services, Contact, Gallery)
-* Sketch or describe the layout of each page
-* Map out internal navigation (how pages link to one another)
+Layout Sketches
+Home
+Header: [Logo | Home | About | Contact | Dark Mode]
+Main: Hero (Welcome + CTA), Project Gallery (filterable), Skills (animated cards)
+Footer: Email, Copyright
+Back-to-Top Button
 
-**Goal:** Show intentional structure and user journey across the site.
+About
+Header: [Logo | Home | About | Contact | Dark Mode]
+Main: Profile photo, Bio, Skill Progress Bars, Education Timeline (animated)
+Footer: Email, Copyright
+Back-to-Top Button
 
----
+Contact
+Header: [Logo | Home | About | Contact | Dark Mode]
+Main: Contact form (validation, localStorage)
+Footer: Email, Copyright
+Back-to-Top Button
 
-## 🌍💻 Part 2: Build the Website Using HTML5, CSS, and JavaScript
+Code Organization
 
-Using your plan, begin building:
+Folders: css (styles), js (scripts), images (assets).
+Files: index.html, about.html, contact.html, css/style.css, js/script.js, images/profile.jpg.
+Practices:
+Commented HTML, CSS, JavaScript for clarity.
+Modularized CSS (sections: Reset, Dark Mode, Layout, etc.).
+Modularized JavaScript (functions: toggleDarkMode, setupSmoothScroll, etc.).
+Validated HTML (W3C Validator: No errors), CSS (W3C CSS Validator: No errors).
+Tested responsiveness on mobile (320px), tablet (768px), desktop (1200px).
 
-* Use HTML5 for semantic structure
-* Apply CSS for responsive layout, styling, and animations
-* Use JavaScript to add interactivity (menus, forms, toggles, dynamic content)
+Live URL
+Live site: https://seunvense.github.io/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/
 
-Each page should:
-
-* Be mobile-responsive
-* Share a consistent layout/header/footer
-* Include at least one interactive element (e.g., form validation, toggle menu, animation on scroll)
-
-**Goal:** Integrate everything you’ve learned in a cohesive, functioning project.
-
----
-
-## 🛠️🚀 Part 3: Best Practices for Code Organization
-
-Before deployment, refactor your project to follow production-friendly practices:
-
-* Organize files in folders (`/css`, `/js`, `/images`, etc.)
-* Write clean, modular, and commented code
-* Use meaningful file names and relative paths
-* Validate your HTML/CSS and test on different screen sizes
-
-**Goal:** Prepare your codebase to be readable, maintainable, and scalable.
-
----
-
-## 🌐🚀 Part 4: Introduction to Hosting and Deployment
-
-Once your project is complete, choose a method to **host your site online**.
-
-You can use:
-
-* **GitHub Pages** (great for portfolios and static sites)
-* **Netlify** (powerful CI/CD features and easy form support)
-* **Vercel** (lightning-fast deployment for frontend projects)
-
-Deploy your project and confirm that:
-
-* All links and scripts work
-* It loads properly on mobile and desktop
-* It has a clear, shareable URL
-
-**Goal:** Publish your work online and make it accessible to the world.
-
----
-
-## Deliverables
-
-1. A GitHub repository containing:
-
-   * Your complete project code, properly organized
-   * A `README.md` file explaining your project purpose, structure, and live URL
-2. A live deployed website (hosted via GitHub Pages, Netlify, or Vercel)
-
----
-
-## Outcome
-
-* Clarity and thoroughness of planning documentation
-* Proper use of HTML5, CSS, and JavaScript across multiple pages
-* Responsive and accessible design
-* Clean, well-organized, and commented code
-* Successful live deployment with a working link
-* Evidence of following best practices
+Hosted on GitHub Pages from the main branch.
+Verified all links, scripts, and assets load correctly.
+Tested on mobile (320px) and desktop (1200px) via Chrome DevTools and physical devices.
+No console errors, lazy-loaded images confirmed, all features (filters, form, animations) functional.
